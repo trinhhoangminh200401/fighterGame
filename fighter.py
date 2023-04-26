@@ -163,13 +163,13 @@ class Fighter():
         #check if an attack was executed
         if self.action == 3 or self.action == 4:
           self.attacking = False
-          self.attack_cooldown = 20
+          self.attack_cooldown = 10
         #check if damage was taken
         if self.action == 5:
           self.hit = False
           #if the player was in the middle of an attack, then the attack is stopped
           self.attacking = False
-          self.attack_cooldown = 20
+          self.attack_cooldown = 10
 
 
   def attack(self, target):
